@@ -8,10 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace project2
+namespace DataStructures
 {
     public partial class MainForm : Form
     {
+        public int LoadProgress { get; set; }
+        public MainForm(String FilesName)
+        {
+            InitializeComponent();
+
+        }
         public MainForm()
         {
             InitializeComponent();

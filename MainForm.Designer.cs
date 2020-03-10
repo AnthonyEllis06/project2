@@ -1,4 +1,4 @@
-﻿namespace project2
+﻿namespace DataStructures
 {
     partial class MainForm
     {
@@ -49,7 +49,6 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -58,8 +57,8 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(1, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(12, 4, 0, 0);
-            this.menuStrip1.Size = new System.Drawing.Size(1881, 40);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 3, 0, 0);
+            this.menuStrip1.Size = new System.Drawing.Size(1253, 27);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -70,26 +69,26 @@
             this.closeToolStripMenuItem,
             this.saveToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 44);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(208, 44);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(208, 44);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.closeToolStripMenuItem.Text = "Close";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(208, 44);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // editToolStripMenuItem
@@ -100,32 +99,32 @@
             this.editFileToolStripMenuItem,
             this.sortByFirstToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(75, 44);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // findToolStripMenuItem
             // 
             this.findToolStripMenuItem.Name = "findToolStripMenuItem";
-            this.findToolStripMenuItem.Size = new System.Drawing.Size(276, 44);
+            this.findToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.findToolStripMenuItem.Text = "Find";
             // 
             // editNameToolStripMenuItem
             // 
             this.editNameToolStripMenuItem.Name = "editNameToolStripMenuItem";
-            this.editNameToolStripMenuItem.Size = new System.Drawing.Size(276, 44);
+            this.editNameToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.editNameToolStripMenuItem.Text = "Edit Name";
             // 
             // editFileToolStripMenuItem
             // 
             this.editFileToolStripMenuItem.Name = "editFileToolStripMenuItem";
-            this.editFileToolStripMenuItem.Size = new System.Drawing.Size(276, 44);
+            this.editFileToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.editFileToolStripMenuItem.Text = "Sort By Last";
             this.editFileToolStripMenuItem.Click += new System.EventHandler(this.editFileToolStripMenuItem_Click);
             // 
             // sortByFirstToolStripMenuItem
             // 
             this.sortByFirstToolStripMenuItem.Name = "sortByFirstToolStripMenuItem";
-            this.sortByFirstToolStripMenuItem.Size = new System.Drawing.Size(276, 44);
+            this.sortByFirstToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.sortByFirstToolStripMenuItem.Text = "Sort By First";
             // 
             // viewToolStripMenuItem
@@ -135,31 +134,31 @@
             this.firstLastToolStripMenuItem,
             this.originalToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(86, 44);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // lastFirstToolStripMenuItem
             // 
             this.lastFirstToolStripMenuItem.Name = "lastFirstToolStripMenuItem";
-            this.lastFirstToolStripMenuItem.Size = new System.Drawing.Size(246, 44);
+            this.lastFirstToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.lastFirstToolStripMenuItem.Text = "Last, First";
             // 
             // firstLastToolStripMenuItem
             // 
             this.firstLastToolStripMenuItem.Name = "firstLastToolStripMenuItem";
-            this.firstLastToolStripMenuItem.Size = new System.Drawing.Size(246, 44);
+            this.firstLastToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.firstLastToolStripMenuItem.Text = "First, Last";
             // 
             // originalToolStripMenuItem
             // 
             this.originalToolStripMenuItem.Name = "originalToolStripMenuItem";
-            this.originalToolStripMenuItem.Size = new System.Drawing.Size(246, 44);
+            this.originalToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.originalToolStripMenuItem.Text = "Original";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(100, 44);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // NameListViewBox
@@ -168,9 +167,11 @@
             this.NameListViewBox.AccessibleName = "";
             this.NameListViewBox.AutoSize = true;
             this.NameListViewBox.ForeColor = System.Drawing.SystemColors.Menu;
-            this.NameListViewBox.Location = new System.Drawing.Point(4, 43);
+            this.NameListViewBox.Location = new System.Drawing.Point(3, 28);
+            this.NameListViewBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NameListViewBox.Name = "NameListViewBox";
-            this.NameListViewBox.Size = new System.Drawing.Size(480, 1088);
+            this.NameListViewBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NameListViewBox.Size = new System.Drawing.Size(320, 696);
             this.NameListViewBox.TabIndex = 1;
             this.NameListViewBox.TabStop = false;
             this.NameListViewBox.Text = "Names";
@@ -178,15 +179,16 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ClientSize = new System.Drawing.Size(1883, 1135);
+            this.ClientSize = new System.Drawing.Size(1255, 726);
             this.Controls.Add(this.NameListViewBox);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.Window;
             this.Location = new System.Drawing.Point(0, 42);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(1, 0, 1, 1);
             this.Text = "MainForm";

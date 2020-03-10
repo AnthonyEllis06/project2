@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace project2
+namespace DataStructures
 {
     class NameListProgram
     {
@@ -21,15 +21,17 @@ namespace project2
         }
         #endregion
         #region Form Objects
-        MainForm Main;
         SplashScreen Splash;
+        MainForm mainForm;
         #endregion
 
         public NameListProgram()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SplashScreen());
+            Splash = new SplashScreen();
+            Application.Run(Splash);
+
         }
     }
 }
