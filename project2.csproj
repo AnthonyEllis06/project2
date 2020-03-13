@@ -95,6 +95,7 @@
   <ItemGroup>
     <Content Include="Data Files\NameFile.txt" />
     <Content Include="Data Files\new NameFile.txt" />
+    <Content Include="Icon1.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

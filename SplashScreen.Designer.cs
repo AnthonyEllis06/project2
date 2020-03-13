@@ -68,7 +68,6 @@
             this.UNInput.Text = "Name";
             this.UNInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.UNInput.WordWrap = false;
-            this.UNInput.TextChanged += new System.EventHandler(this.UNInput_TextChanged);
             this.UNInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UNInput_KeyDown);
             this.UNInput.Leave += new System.EventHandler(this.UNInput_Leave);
             // 

@@ -47,11 +47,6 @@ namespace DataStructures
                 EmailInput.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
         }
 
-        private void UNInput_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void UNInput_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyData == Keys.Enter)
