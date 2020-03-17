@@ -145,6 +145,14 @@ namespace DataStructures
             return stringNameArray;
         }
 
+        public int IndexOf(Name name)
+        {
+            if (Names.Contains(name))
+                return Names.IndexOf(name);
+            else
+                return -1;
+        }
+
         /// <summary>  method to set list change to true that is easier to read. also for testing purposes</summary>
         public void ListChange()
         {

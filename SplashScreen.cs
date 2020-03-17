@@ -21,15 +21,6 @@ namespace DataStructures
             InitializeComponent();
         }
 
-        private void SplashScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void StartingProgress_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void UNInput_Leave(object sender, EventArgs e)
         {
@@ -55,27 +46,28 @@ namespace DataStructures
 
         private void EmailInput_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData == Keys.Enter)
-                ValidateUserEmail();
-            if (EmailInput.BackColor != Color.Red)
+            if (e.KeyData == Keys.Enter && ValidateUserEmail())
             {
                 EmailInput.Visible = false;
                 UNInput.Visible = false;
                 OpenFileButton.Visible = true;
                 NewFileButton.Visible = true;
             }
-
         }
 
-        private void ValidateUserEmail()
+        private bool ValidateUserEmail()
         {
             Regex EmailPattern = new Regex(@"([\w\W]+)(@)([\w]+)[\.](com|edu)"); // Regex pattern for emails
             Match m = EmailPattern.Match(EmailInput.Text);
-            if (!m.Success)
-                EmailInput.BackColor = Color.Red;
-            else
+            if (m.Success)
             {
                 UserEmail = EmailInput.Text;
+                return true;
+            }
+            else
+            {
+                EmailInput.BackColor = Color.Red;
+                return false;
             }
         }
 
@@ -83,6 +75,7 @@ namespace DataStructures
         {
             String FileName = Tools.OpenDialog("NameList File", "text files|*.txt");
             main = new MainForm(FileName);
+            Close();
         }
 
         private void NewFileButton_Click(object sender, EventArgs e)

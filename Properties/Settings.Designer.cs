@@ -22,5 +22,14 @@ namespace DataStructures.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("300")]
+        public int NameListViewWidth {
+            get {
+                return ((int)(this["NameListViewWidth"]));
+            }
+        }
     }
 }

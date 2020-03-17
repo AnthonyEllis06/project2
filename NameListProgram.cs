@@ -17,7 +17,7 @@ namespace DataStructures
         #region Main Method
         static void Main()
         {
-            new NameListProgram();
+            ShortcutMain();
         }
         #endregion
         #region Form Objects
@@ -31,7 +31,16 @@ namespace DataStructures
             Application.SetCompatibleTextRenderingDefault(false);
             Splash = new SplashScreen();
             Application.Run(Splash);
+            Application.Run(Splash.main);
 
+        }
+
+        static void ShortcutMain()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            MainForm testMain = new MainForm(Tools.OpenDialog("NameList File", "text files|*.txt"));
+            Application.Run(testMain);
         }
     }
 }
